@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sebastião Doce</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsivo.css">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <script src="https://kit.fontawesome.com/a8ec99a65b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header-sobre-galeria">
+        <figure>
+            <img src="../img/logo.png" alt="" class="logo">
+        </figure>
+        <div class="alinha-header-esquerda">
+            <a href="../font/galeria.html"><i class="fa-solid fa-image" id="galeria"></i></a>
+            <a href="../font/galeria.html" class="home-texto">Galeria</a>
+            <a href="../font/sobre.html"><i class="fa-solid fa-user" id="contato"></i></a>
+            <a href="../font/sobre.html" class="home-texto">Contato</a>
+        </div>
+    </header>
+
+
+    <main class="maindex">
+        <div class="main">
+            <section class="mosaico">
+                <div class="grid-container">
+                    <div class="item1"></div>
+                    <div class="item2"></div>
+                    <div class="item3"></div>  
+                    <div class="item4"></div>
+                    <div class="item5"></div>
+                </div>
+                </section> 
+                <section class="prof">
+                    <h2>QUEM SOU EU</h2>
+                    <hr class="separa">
+                    <div class="prof-container">
+                    <div class="left"><div class="profile"></div><p>Sebastião Doce da Silva<br>23 anos<br>Fotógrafo</p></div>
+                    <div class="right">Nasci em 2000 em uma cidade pequena do Brasil e comecei a estudar fotografia aos 16 anos. Aos 18 anos, mudei-me para a cidade grande para estudar em uma faculdade de renome, onde desenvolvi meu talento em documentar o mundo ao meu redor. Minhas fotos chamaram a atenção de organizações sem fins lucrativos e, aos 21 anos, lancei minha primeira exposição em São Paulo, que foi um grande sucesso. Desde então, uso a fotografia para fazer a diferença na vida das pessoas.</div>                
+                </div>
+                </section>       
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-informacoes">
+                <div class="footer-sobre">
+                    <span class="footer-title">Sobre</span>
+                    <a href="sobre.html">Quem sou eu</a>
+                    <a href="sobre.html">Origem</a>
+                    <a href="sobre.html">Meus Trabalhos</a>
+                </div>
+                <div class="footer-galeria">
+                    <span class="footer-title">Galeria</span>
+                    <a href="galeria.html">Portifólio</a>
+                    <a href="galeria.html">Foto</a>
+                </div>
+                <div class="footer-contato">
+                    <span class="footer-title">Contato</span>
+                    <a href="sobre.html">Envie um e-mail</a>
+                    <a href="sobre.html">Garanta sua foto</a>
+                    <a href="sobre.html">Reclamações</a>
+                    <a href="sobre.html">Preços</a>
+                </div>
+                <div class="footer-redes-sociais">
+                    <span class="footer-title">Redes Sociais</span>
+                    <a href="https://www.facebook.com/facebookBrasil/">Facebook</a>
+                    <a href="https://www.instagram.com/">Instagram</a>
+                    <a href="https://twitter.com/?lang=pt-br">Twitter</a>
+                    <a href="https://www.tiktok.com/pt-BR/">Tik Tok</a>
+                </div>
+            </div>
+            <div class="footer-logo">
+                <img class="footer-img-logo" src="../img/logo.png" alt="">
+                <p>@2023 Direitos Reservados</p>
+            </div>
+        
+        </footer>
+</body>
+<script>
+    var mosfotos = document.querySelectorAll(".grid-container div")
+    for(i=0;i<mosfotos.length;i++){
+        mosfotos[i].setAttribute("style", `background-image: url(../img/mos${i+1}.webp);`)
+    }
+</script>
+</html>

@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500;700&display=swap');
+
+:root {
+    --cor-footer: #2D2D2D;
+    --cor-secundaria: #DC2A20;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Nunito";
+    text-decoration: none;
+}
+body{
+    color: #FFF;
+    background-color: #1E1E1E;
+    height: 100vh;
+}
+hr.separa{
+    margin-top: 20px;
+    height: 4px;
+    width: 25%;
+    background-color: #B42A21;
+    border: none;
+}
+
+
+.header-sobre-galeria{
+    background-color: #2d2d2d;
+    height: 100px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    
+}
+
+.logo{
+    height: 130px;
+    width: 170px;
+    margin-top: 30px;
+    
+}
+.logo:hover{
+    animation: abacate 1s;
+    cursor: pointer;
+}
+
+#home{
+    font-size: 45px;
+    color: #fff;
+}
+
+@keyframes abacate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate( 360deg);
+    }
+}
+
+
+.alinha-header-esquerda{
+    text-align: center;
+    margin-right: 20px;
+}
+
+.home-texto{
+   Opacity: 15;
+   text-decoration: none;
+   color: #e26e66;
+}
+
+.home-texto:hover{
+    opacity: 100%;
+    cursor: pointer;
+    color: #B42A21;
+    animation: letspace 2s;
+    text-decoration: none;
+    
+}
+@keyframes letspace{
+    0%{
+        letter-spacing: auto;
+    }
+    50%{
+        letter-spacing: 15px;
+    }
+    100%{
+        letter-spacing: auto;
+    }
+}
+
+.header-sobre-galeria{
+    background-color: #2d2d2d;
+    height: 100px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    
+}
+
+.logo{
+    height: 130px;
+    width: 170px;
+    margin-top: 30px;
+    
+}
+.logo:hover{
+    animation: abacate 1s;
+    cursor: pointer;
+}
+
+i{
+    font-size: 45px;
+    color: #fff;
+}
+
+@keyframes abacate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate( 360deg);
+    }
+}
+
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+    width: 80vw;
+    height: 442px;
+  display: grid;
+  grid-template-areas:
+    'menu menu header header header right'
+    'menu menu header header header right'
+    'footer footer footer main main right';
+  gap: 10px;
+  padding: 10px;
+}
+.maindex{
+    padding-top: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+
+}
+.grid-container > div {
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px 0;
+}
+.mosaico{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+section.prof {
+    margin: 50px 10px 10px 10px;
+}
+section.prof h2{
+    font-size: 2em;
+}
+.prof-container{
+    margin-top: -20px;
+    height: 500px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+.left{
+    text-align: center
+}
+.left p{
+    font-size: 1.2em;
+
+    margin-top: 20px;
+}
+.right{
+    text-align: justify;
+    font-size: 1.2em;
+}
+.profile{
+    width: 310px;
+    height: 310px;
+    border-radius: 50%;
+    background-image: url(../img/sebastiao.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home-texto{
+    padding-right: 20px;
+}
+
+footer{
+    margin-top: 60px;
+    width: 100%;
+    bottom: 0;
+    background-color: var(--cor-footer);
+  }
+  .footer-title{
+    font-weight: bold;
+    color: var(--cor-secundaria);
+    margin-bottom: 5px;
+  }
+  .footer-informacoes{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .footer-informacoes div{
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-informacoes a{
+    color: white;
+  }
+  .footer-informacoes a:hover{
+    text-decoration: underline;
+  }
+  .footer-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    font-size: 14px;
+  }
+  .footer-img-logo{
+    width: 250px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-logo p{
+    padding-bottom: 20px;
+  }
+  
+  .footer-img-logo:hover{
+    animation: abacate 1s;
+    cursor: pointer;
+  }
+.grid-container div{
+    transition: all 1s;
+}
+.grid-container div:hover{
+    transform: scale(1.05);
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}

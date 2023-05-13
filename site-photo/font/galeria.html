@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/galeria.css">
+    <link rel="stylesheet" href="../css/responsivo.css">
+    <script src="https://kit.fontawesome.com/a8ec99a65b.js" crossorigin="anonymous"></script>
+    <title>Galeria</title>
+</head>
+
+<body>
+    <header class="header-sobre-galeria">
+        <figure>
+            <img src="../img/logo.png" alt="" class="logo">
+        </figure>
+        <div class="alinha-header-esquerda">
+            <a href="../font/sobre.html"><i class="fa-solid fa-user" id="contato"></i></a>
+            <a href="../font/sobre.html" class="home-texto">Contato</a>
+            <a href="../font/index.html"><i class="fa-solid fa-house" id="home"></i></a>
+            <a href="../font/index.html" class="home-texto">Home</a>
+        </div>
+    </header>
+
+    <main>
+        <h1>Conheça um pouco do meu trabalho.</h1>
+        <hr class="separa">
+
+        <div class="flex-container">
+            <div class="flex-foto">
+                <div class="foto"></div>
+                <div class="legenda">Uma senhora solicitou fotos de seus dois Golden Retrievers</div>
+            </div>
+            <div class="flex-foto">
+                <div class="foto"></div>
+                <div class="legenda">Fotografia de terrenos montanhosos com cachoeira</div>
+            </div>
+            <div class="flex-foto">
+                <div class="foto"></div>
+                <div class="legenda">Empresa Finlandesa solicitou fotos de seu novo navio</div>
+            </div>
+            <div class="flex-foto">
+                <div class="foto"></div>
+                <div class="legenda">Foto conceito para um fotógrafo simulando foto do lago</div>
+            </div>
+            <div class="flex-foto">
+                <div class="foto"></div>
+                <div class="legenda">Foto realizada para casal ao por do sol</div>
+            </div>
+            <div class="flex-foto">
+                <div class="foto"></div>
+                <div class="legenda">Fotografia de modelo japonesa para alavancar seu trabalho</div>
+            </div>
+            <div class="flex-foto">
+                <div class="foto"></div>
+                <div class="legenda">Fotografia de um lugar com iluminação</div>
+            </div>
+            <div class="flex-foto">
+                <div class="foto"></div>
+                <div class="legenda">Foto de estudantes caminhando entre árvores e folhas</div>
+            </div>
+            <div class="flex-foto">
+                <div class="foto"></div>
+                <div class="legenda">Foto realizada para uma fotógrafo com efeito para sua página</div>
+            </div>
+            <div class="flex-foto">
+                <div class="foto"></div>
+                <div class="legenda">Fotografia de um cachorro perdido na praia</div>
+            </div>
+            <div class="flex-foto">
+                <div class="foto"></div>
+                <div class="legenda">Fotografia de Mulher apreciando a vista do mar</div>
+            </div>
+            <div class="flex-foto">
+                <div class="foto"></div>
+                <div class="legenda">Empresa de automóveis solicitou a foto do banco de um de seus carros</div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-informacoes">
+            <div class="footer-sobre">
+                <span class="footer-title">Sobre</span>
+                <a href="sobre.html">Quem sou eu</a>
+                <a href="sobre.html">Origem</a>
+                <a href="sobre.html">Meus Trabalhos</a>
+            </div>
+            <div class="footer-galeria">
+                <span class="footer-title">Galeria</span>
+                <a href="galeria.html">Portifólio</a>
+                <a href="galeria.html">Foto</a>
+            </div>
+            <div class="footer-contato">
+                <span class="footer-title">Contato</span>
+                <a href="sobre.html">Envie um e-mail</a>
+                <a href="sobre.html">Garanta sua foto</a>
+                <a href="sobre.html">Reclamações</a>
+                <a href="sobre.html">Preços</a>
+            </div>
+            <div class="footer-redes-sociais">
+                <span class="footer-title">Redes Sociais</span>
+                <a href="https://www.facebook.com/facebookBrasil/">Facebook</a>
+                <a href="https://www.instagram.com/">Instagram</a>
+                <a href="https://twitter.com/?lang=pt-br">Twitter</a>
+                <a href="https://www.tiktok.com/pt-BR/">Tik Tok</a>
+            </div>
+        </div>
+        <div class="footer-logo">
+            <img class="footer-img-logo" src="../img/logo.png" alt="">
+            <p>@2023 Direitos Reservados</p>
+        </div>
+    
+    </footer>
+</body>
+<script>
+    var fotos = document.querySelectorAll(".foto")
+    for (i = 0; i < fotos.length; i++) {
+        fotos[i].setAttribute("style", `background-image: url(../img/img${i + 1}.png);`)
+    }
+</script>
+
+</html>
